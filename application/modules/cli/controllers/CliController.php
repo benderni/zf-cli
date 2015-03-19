@@ -7,7 +7,7 @@
  *
  * Class CliController
  */
-class CliControllerAction extends App_Controller_Action
+class CliController extends App_Controller_Action
 {
     /**
      * Cli index action
