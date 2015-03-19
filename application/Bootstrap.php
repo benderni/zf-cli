@@ -1,12 +1,7 @@
-# zf-cli
-A command-line interface module for ZF1
-
-### Installation
-Check out the repositry or download the zip. Add the `cli` module to your modules folder.
-
-Add following code to your Bootstrap.php file
-
-	protected function _initCli()
+class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
+{
+   // Insert this function in your own Boostrap.php 
+   protected function _initCli()
     {
         if(PHP_SAPI == 'cli') {
 
@@ -23,16 +18,4 @@ Add following code to your Bootstrap.php file
             ));
         }
     }
-
-Add this `autoloaderNamespaces.app = "App_"` to your application.ini file.
-
-### Usage
-````
-php bin/script.php controller action
-````
-
-#### Example
-````
-php bin/script.php cli index
-````
-will output 'success'.
+}
