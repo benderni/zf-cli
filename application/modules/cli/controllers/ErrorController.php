@@ -7,7 +7,7 @@
  *
  * Class ErrorController
  */
-class ErrorControllerAction extends App_Controller_Action
+class ErrorController extends App_Controller_Action
 {
     /**
      * Prints error messages
