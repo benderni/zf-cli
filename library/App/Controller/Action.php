@@ -1,9 +1,8 @@
 <?php
 
 /**
- * @author      Benny Van der Stee (bennyvanderstee@gmail.com)
- * @copyright   2015 Benny Van der Stee
- * @license     https://github.com/bvanderstee/zf-cli/blob/master/LICENSE
+ * @author James McFadden (http://jamesmcfadden.co.uk/)
+ * @author Benny Van der Stee (bennyvanderstee@gmail.com)
  *
  * Class App_Controller_Action
  */

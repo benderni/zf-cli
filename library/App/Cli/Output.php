@@ -2,6 +2,7 @@
 
 /**
  * @author JR (http://www.if-not-true-then-false.com/2010/php-class-for-coloring-php-command-line-cli-scripts-output-php-output-colorizing-using-bash-shell-colors/)
+ * @author Benny Van der Stee (bennyvanderstee@gmail.com)
  *
  * Class App_Cli_Output
  */

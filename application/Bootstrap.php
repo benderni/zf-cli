@@ -1,3 +1,11 @@
+<?php
+
+/**
+ * @author James McFadden (http://jamesmcfadden.co.uk/)
+ * @author Benny Van der Stee (bennyvanderstee@gmail.com)
+ *
+ * Class Bootstrap
+ */
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
    // Insert this function in your own Boostrap.php 
