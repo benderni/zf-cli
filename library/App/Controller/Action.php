@@ -2,7 +2,7 @@
 
 /**
  * @author James McFadden (http://jamesmcfadden.co.uk/)
- * @author Benny Van der Stee (bennyvanderstee@gmail.com)
+ * @author Benny Van der Stee
  *
  * Class App_Controller_Action
  */

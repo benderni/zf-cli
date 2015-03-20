@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author Benny Van der Stee (bennyvanderstee@gmail.com)
+ * @author Benny Van der Stee
  *
  * Class CliController
  */
