@@ -1,5 +1,5 @@
 # zf-cli
-A command-line interface skeleton module for ZF1
+A Zend Framework library and skeleton module for creating cli modules.
 
 ### Installation
 Check out the repositry or download the zip. Add the `cli` module to your modules folder.
