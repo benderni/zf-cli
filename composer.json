@@ -1,0 +1,17 @@
+{
+    "name": "bvanderstee/zf-cli",
+    "description": "A Zend Framework library for creating cli modules",
+    "require": {
+        "zendframework/zendframework1": "1.x"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benny Van der Stee",
+            "email": "benny.vanderstee@phppro.be"
+        }
+    ],
+    "include-path": [
+        "library"
+    ]
+}

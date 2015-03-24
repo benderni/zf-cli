@@ -11,11 +11,7 @@ defined('APPLICATION_ENV')
 (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV')
     : 'production'));
 
-set_include_path(implode(PATH_SEPARATOR, array(
-    dirname(dirname(__FILE__)) . '/library',
-    realpath(APPLICATION_PATH),
-    get_include_path(),
-)));
+require_once realpath(APPLICATION_PATH . '/../vendor/autoload.php');
 
 /** Zend_Application */
 require_once 'Zend/Application.php';

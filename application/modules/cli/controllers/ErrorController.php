@@ -5,7 +5,7 @@
  *
  * Class ErrorController
  */
-class ErrorController extends App_Controller_Action
+class ErrorController extends ZFCli_Controller_Action
 {
     /**
      * Prints error messages

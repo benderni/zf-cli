@@ -4,9 +4,9 @@
  * @author James McFadden (http://jamesmcfadden.co.uk/)
  * @author Benny Van der Stee
  *
- * Class App_Controller_Router_Cli
+ * Class ZFCli_Controller_Router_Cli
  */
-class App_Controller_Router_Cli extends Zend_Controller_Router_Abstract
+class ZFCli_Controller_Router_Cli extends Zend_Controller_Router_Abstract
 {
     /**
      * @param Zend_Controller_Request_Abstract $request

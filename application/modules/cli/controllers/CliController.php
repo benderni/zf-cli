@@ -5,7 +5,7 @@
  *
  * Class CliController
  */
-class CliController extends App_Controller_Action
+class CliController extends ZFCli_Controller_Action
 {
     /**
      * Cli index action

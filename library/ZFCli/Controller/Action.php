@@ -4,12 +4,12 @@
  * @author James McFadden (http://jamesmcfadden.co.uk/)
  * @author Benny Van der Stee
  *
- * Class App_Controller_Action
+ * Class ZFCli_Controller_Action
  */
-class App_Controller_Action extends Zend_Controller_Action
+class ZFCli_Controller_Action extends Zend_Controller_Action
 {
     /**
-     * @var App_Cli_Output
+     * @var ZFCli_Output
      */
     protected $output;
 
@@ -20,6 +20,6 @@ class App_Controller_Action extends Zend_Controller_Action
     {
         parent::init();
         $this->_helper->viewRenderer->setNoRender(TRUE);
-        $this->output = new App_Cli_Output();
+        $this->output = new ZFCli_Output();
     }
 }
