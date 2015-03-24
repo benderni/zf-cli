@@ -24,7 +24,7 @@ Add following code to your Bootstrap.php file
         }
     }
 
-Add this `autoloaderNamespaces.app = "App_"` to your application.ini file.
+Add this `autoloaderNamespaces[] = "ZFCli_"` to your application.ini file.
 
 ### Usage
 ````
