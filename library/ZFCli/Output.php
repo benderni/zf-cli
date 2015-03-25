@@ -8,6 +8,11 @@
  */
 class ZFCli_Output
 {
+    CONST ERROR = 'red';
+    CONST WARNING = 'yellow';
+    CONST NOTICE = 'white';
+    CONST SUCCESS = 'green';
+
     private $foreground_colors = array();
     private $background_colors = array();
 
@@ -44,36 +49,15 @@ class ZFCli_Output
     }
 
     /**
-     * Returns a success styled string
+     * Get a styled message
      *
-     * @param $string
+     * @param string $string
+     * @param string $type
      * @return string
      */
-    public function success($string)
+    public function message($string, $type = self::NOTICE)
     {
-        return $this->getColoredString($string, 'green');
-    }
-
-    /**
-     * Returns a warning styled string
-     *
-     * @param $string
-     * @return string
-     */
-    public function warning($string)
-    {
-        return $this->getColoredString($string, 'yellow');
-    }
-
-    /**
-     * Returns a error styled string
-     *
-     * @param $string
-     * @return string
-     */
-    public function error($string)
-    {
-        return $this->getColoredString($string, 'red');
+        return print $this->getColoredString($string, $type);
     }
 
     /**
@@ -121,5 +105,18 @@ class ZFCli_Output
     public function getBackgroundColors()
     {
         return array_keys($this->background_colors);
+    }
+
+    /**
+     * Add the date and time
+     *
+     * @param $string
+     * @return string
+     */
+    public function addDateTime($string)
+    {
+        $time = new DateTime();
+        $time = $time->format('Y-m-d H:i:s');
+        return $time . " " . $string;
     }
 }

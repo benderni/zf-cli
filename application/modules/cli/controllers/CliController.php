@@ -12,6 +12,6 @@ class CliController extends ZFCli_Controller_Action
      */
     public function indexAction()
     {
-        print $this->output->success("success \n");
+        $this->output->message("success \n", ZFCli_Output::SUCCESS);
     }
 }

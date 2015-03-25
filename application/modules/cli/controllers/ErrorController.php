@@ -16,7 +16,7 @@ class ErrorController extends ZFCli_Controller_Action
         {
             if ($error instanceof Exception)
             {
-                print $this->output->error($error->getMessage()) . "\n";
+                $this->output->message($error->getMessage() ."\n", ZFCli_Output::ERROR);
             }
         }
     }
