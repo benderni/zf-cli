@@ -13,5 +13,8 @@
     ],
     "include-path": [
         "library"
-    ]
+    ],
+    "autoload": {
+        "psr-0": {"ZFCli": "library/"}
+    }
 }
