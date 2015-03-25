@@ -23,6 +23,27 @@ You can check the `../vendor/bvanderstee/zf-cli/application` folder for a skelet
 
 You can check the `../vendor/bvanderstee/zf-cli/bin/script.php` for a skeleton script.php file
 
+Add following code to your Bootstrap.php file
+
+    protected function _initCli()
+    {
+        if(PHP_SAPI == 'cli') {
+
+            $this->bootstrap('FrontController');
+            $front = $this->getResource('FrontController');
+            $front->setRouter(new App_Controller_Router_Cli());
+            $front->setRequest(new Zend_Controller_Request_Simple());
+            $front->setDefaultModule('cli');
+
+            $error = new Zend_Controller_Plugin_ErrorHandler(array(
+                'module' => 'cli',
+                'controller' => 'error',
+                'action' => 'error'
+            ));
+        }
+    }
+
+
 #### Manual
 Check out the repositry or download the zip. Add the `cli` module to your modules folder.
 
