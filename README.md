@@ -31,7 +31,7 @@ Add following code to your Bootstrap.php file
 
             $this->bootstrap('FrontController');
             $front = $this->getResource('FrontController');
-            $front->setRouter(new App_Controller_Router_Cli());
+            $front->setRouter(new ZFCli_Controller_Router_Cli());
             $front->setRequest(new Zend_Controller_Request_Simple());
             $front->setDefaultModule('cli');
 
@@ -49,13 +49,13 @@ Check out the repositry or download the zip. Add the `cli` module to your module
 
 Add following code to your Bootstrap.php file
 
-	protected function _initCli()
+    protected function _initCli()
     {
         if(PHP_SAPI == 'cli') {
 
             $this->bootstrap('FrontController');
             $front = $this->getResource('FrontController');
-            $front->setRouter(new App_Controller_Router_Cli());
+            $front->setRouter(new ZFCli_Controller_Router_Cli());
             $front->setRequest(new Zend_Controller_Request_Simple());
             $front->setDefaultModule('cli');
 
